@@ -1,11 +1,11 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: ${{ acc.IMAGE_NAME }}
+  name: demo
   labels:
-    name: ${{ acc.IMAGE_NAME }}
+    name: demo
 spec:
   ports:
   - port: 8080
   selector:
-    app: ${{ acc.IMAGE_NAME }}
+    app: demo
